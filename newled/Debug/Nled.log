@@ -1,0 +1,14 @@
+﻿生成启动时间为 2020/5/4 8:24:48。
+     1>项目“E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj”在节点 2 上(Build 个目标)。
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj" "/solution:E:\MYProject\Por_C\SoundMaker_new\SoundMaker.sln"  "/config:Debug" "/platform:Win32"
+         VisualGDB: Run "C:\SysGCC\arm-eabi\bin\make.exe  CONFIG=Debug -j8" in directory "E:\MYProject\Por_C\SoundMaker_new\newled" on local computer
+         make: Nothing to be done for `all'.
+         ------------------- Memory utilization report -------------------
+         Used FLASH: 45KB out of 128KB (35%)
+         Used SRAM: 15KB out of 20KB (79%)
+     1>已完成生成项目“E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.62
