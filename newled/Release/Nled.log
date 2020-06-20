@@ -1,21 +1,107 @@
-﻿生成启动时间为 2020/6/20 14:26:45。
-     1>项目“E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj”在节点 2 上(Build 个目标)。
-     1>Build:
-         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj" "/solution:E:\MYProject\Por_C\SoundMaker_new\SoundMaker.sln"  "/config:Release" "/platform:Win32"
-         VisualGDB: Run "C:\SysGCC\arm-eabi\bin\make.exe  CONFIG=Release -j8" in directory "E:\MYProject\Por_C\SoundMaker_new\newled" on local computer
-         C:/SysGCC/arm-eabi/bin/arm-eabi-gcc.exe -ggdb -ffunction-sections -O3   -mcpu=cortex-m3 -mthumb -IInc -IDrivers\CMSIS\Device\ST\STM32F1xx\Include -IDrivers\STM32F1xx_HAL_Driver\Inc -IMiddlewares\Third_Party\FreeRTOS\Source\include -IMiddlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS -IMiddlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3 -IDrivers\STM32F1xx_HAL_Driver\Inc\Legacy -IDrivers\STM32F1xx_HAL_Driver\Src -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -IDrivers/CMSIS/RTOS/Template -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/CMSIS/Include -IApp -I../delay -I../sys -I. -DNDEBUG=1 -DRELEASE=1 -Dflash_layout -DSTM32F103xE -DUSE_FREERTOS -DARM_MATH_CM3 -Dflash_layout -DSTM32F103CB  -c Src/tim.c -o Release/tim.o -MD -MF Release/tim.dep
-         E:\MYProject\Por_C\SoundMaker_new\newled\Src\tim.c(26):
-     1>E:\MYProject\Por_C\SoundMaker_new\newled\.\MainConfig.h(129,7): warning : extra tokens at end of #else directive [-Wendif-labels]
-          #else if (BUG==0)                     //实际板中的接口
-                ^~
-         C:/SysGCC/arm-eabi/bin/arm-eabi-g++.exe -o Release/SoundMaker.elf -Wl,-gc-sections --specs=nano.specs --specs=nosys.specs -TC:\Users\Administrator\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\2019.06/STM32F1xxxx/LinkerScripts/STM32F103CB_flash.lds  -mcpu=cortex-m3 -mthumb   -Wl,--start-group Release/APPTooL.o Release/application.o Release/button.o Release/dht11.o Release/stm32f1xx_hal_adc.o Release/stm32f1xx_hal_adc_ex.o Release/dwt_stm32_delay.o Release/adc.o Release/dma.o Release/gpio.o Release/freertos.o Release/system.o Release/tim.o Release/usart.o Release/stm32f1xx_it.o Release/stm32f1xx_hal_msp.o Release/stm32f1xx_hal_timebase_tim.o Release/main.o Release/system_stm32f1xx.o Release/stm32f1xx_hal.o Release/croutine.o Release/event_groups.o Release/list.o Release/queue.o Release/tasks.o Release/timers.o Release/cmsis_os.o Release/heap_4.o Release/port.o Release/stm32f1xx_hal_rcc.o Release/stm32f1xx_hal_rcc_ex.o Release/stm32f1xx_hal_cortex.o Release/stm32f1xx_hal_dac.o Release/stm32f1xx_hal_dac_ex.o Release/stm32f1xx_hal_tim.o Release/stm32f1xx_hal_tim_ex.o Release/stm32f1xx_hal_uart.o Release/stm32f1xx_hal_dma.o Release/stm32f1xx_hal_pwr.o Release/stm32f1xx_hal_flash.o Release/stm32f1xx_hal_flash_ex.o Release/stm32f1xx_hal_gpio.o Release/StmFlash.o Release/stm32f1xx_hal_gpio_ex.o Release/startup_stm32f103xb.o     -Wl,--end-group
-         C:/SysGCC/arm-eabi/bin/arm-eabi-objcopy.exe -O binary Release/SoundMaker.elf Release/SoundMaker.bin
-         C:/SysGCC/arm-eabi/bin/arm-eabi-objcopy.exe -O ihex Release/SoundMaker.elf Release/SoundMaker.ihex
-         ------------------- Memory utilization report -------------------
-         Used FLASH: 35KB out of 128KB (27%)
-         Used SRAM: 15KB out of 20KB (79%)
-     1>已完成生成项目“E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj”(Build 个目标)的操作。
+﻿生成启动时间为 2020/6/20 15:19:37。
+     1>项目“E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj”在节点 2 上(Clean 个目标)。
+     1>CoreClean:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /clean "E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj" "/solution:E:\MYProject\Por_C\SoundMaker_new\SoundMaker.sln"  "/config:Release" "/platform:Win32"
+         VisualGDB: Run "C:\SysGCC\arm-eabi\bin\make.exe  CONFIG=Release clean -j8" in directory "E:\MYProject\Por_C\SoundMaker_new\newled" on local computer
+         cmd /C del /S /Q Release
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\adc.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\adc.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\application.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\application.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\APPTooL.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\APPTooL.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\button.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\button.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\cmsis_os.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\cmsis_os.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\croutine.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\croutine.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\dht11.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\dht11.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\dma.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\dma.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\dwt_stm32_delay.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\dwt_stm32_delay.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\event_groups.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\event_groups.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\freertos.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\freertos.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\gpio.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\gpio.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\heap_4.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\heap_4.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\list.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\list.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\main.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\main.o
+         E:\MYProject\Por_C\SoundMaker_new\newled\Release\Nled.log
+         另一个程序正在使用此文件，进程无法访问。
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\port.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\port.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\queue.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\queue.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\SoundMaker.bin
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\SoundMaker.elf
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\SoundMaker.ihex
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\SoundMaker.progstat
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\startup_stm32f103xb.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\startup_stm32f103xb.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_adc.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_adc.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_adc_ex.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_adc_ex.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_cortex.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_cortex.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_dac.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_dac.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_dac_ex.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_dac_ex.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_dma.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_dma.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_flash.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_flash.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_flash_ex.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_flash_ex.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_gpio.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_gpio.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_gpio_ex.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_gpio_ex.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_msp.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_msp.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_pwr.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_pwr.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_rcc.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_rcc.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_rcc_ex.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_rcc_ex.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_tim.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_tim.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_timebase_tim.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_timebase_tim.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_tim_ex.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_tim_ex.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_uart.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_hal_uart.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_it.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\stm32f1xx_it.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\StmFlash.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\StmFlash.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\system.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\system.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\system_stm32f1xx.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\system_stm32f1xx.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\tasks.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\tasks.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\tim.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\tim.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\timers.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\timers.o
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\usart.dep
+         删除文件 - E:\MYProject\Por_C\SoundMaker_new\newled\Release\usart.o
+     1>已完成生成项目“E:\MYProject\Por_C\SoundMaker_new\newled\Nled.vcxproj”(Clean 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:04.01
+已用时间 00:00:01.58
